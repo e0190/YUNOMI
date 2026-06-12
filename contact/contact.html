@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact General Inquiries | Yunomi Handroll</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    /* Unique Contact Page Styles */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 60px;
+      margin-top: 40px;
+    }
+    @media (min-width: 768px) {
+      .contact-wrapper {
+        grid-template-columns: 5fr 7fr;
+      }
+    }
+    .contact-info-panel h3 {
+      font-size: 20px;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+    }
+    .contact-method {
+      margin-bottom: 32px;
+    }
+    .contact-method label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 6px;
+    }
+    .contact-method p, .contact-method a {
+      font-size: 15px;
+      color: var(--text-main);
+      text-decoration: none;
+      line-height: 1.6;
+    }
+    .contact-method a:hover {
+      color: var(--accent);
+    }
+    .form-group {
+      margin-bottom: 24px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+    .form-input {
+      width: 100%;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 16px;
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 14px;
+    }
+    .form-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    textarea.form-input {
+      min-height: 150px;
+      resize: vertical;
+    }
+    .submit-btn {
+      background-color: var(--accent);
+      color: #111111;
+      border: none;
+      padding: 16px 32px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .submit-btn:hover {
+      background-color: var(--accent-hover);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="/" class="logo">YUNOMI<span>.</span></a>
+      <div class="nav-links">
+        <a href="/menu">Menus</a>
+        <a href="/#locations">Locations</a>
+        <a href="/contact" style="color: var(--accent);">Contact</a>
+        <a href="https://yunomihandroll.com/apply-now/" target="_blank" class="cta-btn">Hiring</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-title">
+      <p>Connect with Corporate</p>
+      <h1>Get In Touch</h1>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="contact-info-panel">
+        <h3>Direct Channels</h3>
+        
+        <div class="contact-method">
+          <label>DTLA Arts District</label>
+          <a href="mailto:dtla@yunomihandroll.com">dtla@yunomihandroll.com</a>
+        </div>
+
+        <div class="contact-method">
+          <label>The Culver Steps</label>
+          <a href="mailto:culversteps@yunomihandroll.com">culversteps@yunomihandroll.com</a>
+        </div>
+
+        <div class="contact-method">
+          <label>Toluca Lake</label>
+          <a href="mailto:tolucalake@yunomihandroll.com">tolucalake@yunomihandroll.com</a>
+        </div>
+      </div>
+
+      <div>
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message configuration placeholder.');">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" class="form-input" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email Address</label>
+            <input type="email" id="email" class="form-input" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" class="form-input" required></br></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <p>YUNOMI.</p>
+        <span>© 2026 Yunomi Handroll. All Rights Reserved.</span>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/yunomihandroll" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/yunomihandroll" target="_blank">Facebook</a>
+      </div>
+      <div class="footer-contact-link">
+        <a href="/contact" style="text-decoration: underline;">Corporate Contact →</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
