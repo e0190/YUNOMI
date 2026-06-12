@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yunomi Handroll | Premium LA Sushi & Handroll Bar</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    /* Unique Home Page Styles */
+    .hero {
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
+    .hero-accolades {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: 64px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      color: #FFFFFF;
+    }
+    .hero p {
+      max-width: 500px;
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+    }
+    .hero-btns a {
+      padding: 16px 32px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+    .btn-solid {
+      background-color: var(--accent);
+      color: #111111;
+    }
+    .btn-outline {
+      border: 1px solid #444444;
+      color: var(--text-main);
+      transition: border-color 0.2s ease;
+    }
+    .btn-outline:hover {
+      border-color: var(--accent);
+    }
+    .definition-block {
+      padding: 100px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .definition-title {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 28px;
+      margin-bottom: 16px;
+      color: #FFFFFF;
+    }
+    .definition-text {
+      max-width: 600px;
+      margin: 0 auto;
+      color: var(--text-muted);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+    .location-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+    }
+    .location-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .location-card h3 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      color: #FFFFFF;
+    }
+    .location-meta {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .location-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .location-actions a {
+      text-align: center;
+      padding: 12px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+    .action-waitlist {
+      background-color: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #F87171;
+    }
+    .action-waitlist:hover {
+      border-color: #EF4444;
+    }
+    .action-takeout {
+      background-color: rgba(197, 168, 128, 0.1);
+      border: 1px solid rgba(197, 168, 128, 0.3);
+      color: var(--accent);
+    }
+    .action-takeout:hover {
+      border-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="announcement-banner">
+    ⚡ Due to high demand: 45-minute limit on all bar seats. Your consideration is appreciated.
+  </div>
+
+  <header>
+    <div class="nav-container">
+      <a href="/" class="logo">YUNOMI<span>.</span></a>
+      <div class="nav-links">
+        <a href="/menu">Menus</a>
+        <a href="/#locations">Locations</a>
+        <a href="/contact">Contact</a>
+        <a href="https://yunomihandroll.com/apply-now/" target="_blank" class="cta-btn">Hiring</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-accolades">★ Michelin Recommended • AIA LA Design Winner</div>
+    <h1>CRISP NORI.<br>WARM RICE.</h1>
+    <p>An elite, counter-only Japanese handroll experience across Los Angeles. Striking architectural aesthetics paired with flawless culinary execution.</p>
+    <div class="hero-btns">
+      <a href="#locations" class="btn-solid">Join a Waitlist</a>
+      <a href="/menu" class="btn-outline">Explore Menus</a>
+    </div>
+  </section>
+
+  <section class="definition-block">
+    <div class="definition-title">yunomi [yoo-no-mi] n. (湯呑み)</div>
+    <div class="definition-text">A traditional form of Japanese teacup typically made from ceramic material, constructed to be taller than it is wide, and mindfully built for daily, functional ritual. We bring that exact standard of daily excellence to our bars.</div>
+  </section>
+
+  <main id="locations">
+    <div class="section-title">
+      <p>Live Counters</p>
+      <h2>Select Your Venue</h2>
+    </div>
+
+    <div class="location-grid">
+      <div class="location-card">
+        <div>
+          <h3>DTLA Arts District</h3>
+          <div class="location-meta">
+            806 E. 3rd St., Unit #100<br>Los Angeles, CA 90013<br><br>
+            Mon - Sun: 11:30 AM - 10:00 PM
+          </div>
+        </div>
+        <div class="location-actions">
+          <a href="https://www.yelp.com/waitlist/yunomi-handroll-los-angeles" target="_blank" class="action-waitlist">Yelp Live Waitlist</a>
+          <a href="https://order.toasttab.com/online/yunomi-handroll-806-e-3rd-street-unit-100" target="_blank" class="action-takeout">Toast Takeout</a>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div>
+          <h3>The Culver Steps</h3>
+          <div class="location-meta">
+            9300 Culver Blvd., Unit #116<br>Culver City, CA 90232<br><br>
+            Mon - Sun: 11:30 AM - 10:00 PM
+          </div>
+        </div>
+        <div class="location-actions">
+          <a href="https://www.yelp.com/waitlist/yunomi-handroll-culver-city-2" target="_blank" class="action-waitlist">Yelp Live Waitlist</a>
+          <a href="https://order.toasttab.com/online/yunomi-handroll-bar-culver-city-9300-culver-blvd-unit-116" target="_blank" class="action-takeout">Toast Takeout</a>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div>
+          <h3>Toluca Lake</h3>
+          <div class="location-meta">
+            10218 Riverside Dr<br>Toluca Lake, CA 91602<br><br>
+            Mon - Sun: 11:30 AM - 10:00 PM
+          </div>
+        </div>
+        <div class="location-actions">
+          <a href="https://www.yelp.com/waitlist/yunomi-handroll-san-fernando-valley/" target="_blank" class="action-waitlist">Yelp Live Waitlist</a>
+          <a href="https://order.toasttab.com/online/yunomi-handroll-bar-toluca-lake" target="_blank" class="action-takeout">Toast Takeout</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <p>YUNOMI.</p>
+        <span>© 2026 Yunomi Handroll. All Rights Reserved.</span>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/yunomihandroll" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/yunomihandroll" target="_blank">Facebook</a>
+      </div>
+      <div class="footer-contact-link">
+        <a href="/contact">Corporate Contact →</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
