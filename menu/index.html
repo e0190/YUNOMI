@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menus | Yunomi Handroll</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .menu-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 40px;
+      text-decoration: none;
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 240px;
+      transition: border-color 0.2s ease;
+    }
+    .menu-card:hover {
+      border-color: var(--accent);
+    }
+    .menu-card h3 {
+      font-size: 20px;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+    .menu-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .menu-link-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      margin-top: 32px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="/" class="logo-link">
+        <img src="https://yunomihandroll.com/wp-content/uploads/2022/05/yunomi-natural-logo-opt-1.png" alt="Yunomi Handroll Logo" class="brand-logo">
+      </a>
+      <div class="nav-links">
+        <a href="/menu" style="color: var(--accent);">Menus</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/press">Press</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="https://yunomihandroll.com/apply-now/" target="_blank" class="cta-btn">Hiring</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-title">
+      <p>The Culinary Offerings</p>
+      <h1>Interactive Menus</h1>
+    </div>
+
+    <div class="menu-grid">
+      <a href="https://yunomihandroll.com/handroll-menu/" target="_blank" class="menu-card">
+        <div>
+          <h3>Indoor Bar Menu</h3>
+          <p>Signature raw single handrolls, curated premium sets, and cut rolls meticulously built behind the direct bar counter.</p>
+        </div>
+        <div class="menu-link-label">View Full Menu ↗</div>
+      </a>
+
+      <a href="https://yunomihandroll.com/drink-menu/" target="_blank" class="menu-card">
+        <div>
+          <h3>Beer & Saké</h3>
+          <p>Imported craft draft options, complex cold sakes, and crisp matches balanced specifically for deep fish pairings.</p>
+        </div>
+        <div class="menu-link-label">View Drink Menu ↗</div>
+      </a>
+
+      <a href="https://yunomihandroll.com/takeout-menu/" target="_blank" class="menu-card">
+        <div>
+          <h3>Takeout Menu</h3>
+          <p>Specially bundled variations engineered to safely sustain transit conditions while protecting custom rice textures.</p>
+        </div>
+        <div class="menu-link-label">View Takeout Menu ↗</div>
+      </a>
+
+      <a href="https://yunomihandroll.com/patio-menu/" target="_blank" class="menu-card">
+        <div>
+          <h3>Patio Menu</h3>
+          <p>Casual outdoor open-air configurations. Exclusively offered at our Culver Steps destination framework.</p>
+        </div>
+        <div class="menu-link-label">View Patio Menu ↗</div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <p>YUNOMI.</p>
+        <span>© 2026 Yunomi Handroll. All Rights Reserved.</span>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/yunomihandroll" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/yunomihandroll" target="_blank">Facebook</a>
+      </div>
+      <div class="footer-contact-link">
+        <a href="/contact">Corporate Contact →</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
