@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yunomi Handroll | Premium LA Sushi & Handroll Bar</title>
+  <link rel="icon" type="image/png" href="https://yunomihandroll.com/wp-content/uploads/2022/05/yunomi-natural-logo-opt-1.png">
   <link rel="stylesheet" href="/style.css">
   <style>
     .hero {
-      height: 75vh;
+      height: 80vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -15,6 +16,9 @@
       text-align: center;
       border-bottom: 1px solid var(--border-color);
       position: relative;
+      background-image: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.75)), url('/images/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
     }
     .hero-accolades {
       font-size: 11px;
@@ -34,7 +38,7 @@
     }
     .hero p {
       max-width: 500px;
-      color: var(--text-muted);
+      color: #EAEAEA;
       font-size: 15px;
       line-height: 1.6;
       margin-bottom: 40px;
@@ -59,12 +63,14 @@
       background-color: var(--accent-hover);
     }
     .btn-outline {
-      border: 1px solid #444444;
-      color: var(--text-main);
-      transition: border-color 0.2s ease;
+      border: 1px solid #FFFFFF;
+      color: #FFFFFF;
+      transition: background-color 0.2s ease, color 0.2s ease;
+      background-color: rgba(17, 17, 17, 0.4);
     }
     .btn-outline:hover {
-      border-color: var(--accent);
+      background-color: #FFFFFF;
+      color: #111111;
     }
     .definition-block {
       padding: 100px 20px;
@@ -154,7 +160,6 @@
       </a>
       <div class="nav-links">
         <a href="/menu">Menus</a>
-        <a href="/gallery">Gallery</a>
         <a href="/press">Press</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
@@ -177,6 +182,10 @@
     <div class="definition-title">yunomi [yoo-no-mi] n. (湯呑み)</div>
     <div class="definition-text">A traditional form of Japanese teacup typically made from ceramic material, constructed to be taller than it is wide, and mindfully built for daily, functional ritual. We bring that exact standard of daily excellence to our bars.</div>
   </section>
+
+  <div class="inline-photo-block" style="max-width: 1200px; margin: 80px auto 0 auto; padding: 0 40px;">
+    <img src="/images/interior-dtla.jpg" alt="Yunomi Counter Dynamic Framing">
+  </div>
 
   <main id="locations">
     <div class="section-title">
@@ -203,7 +212,7 @@
         <div>
           <h3>The Culver Steps</h3>
           <div class="location-meta">
-            9300 Culver Blvd., Unit #116<br>Culver City, CA 90232<br><br>
+            9300 Culver Blvd., Unit #116<br>Culver City, CA 92232<br><br>
             Mon - Sun: 11:30 AM - 10:00 PM
           </div>
         </div>
