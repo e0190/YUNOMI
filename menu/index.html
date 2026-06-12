@@ -4,49 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Menus | Yunomi Handroll</title>
+  <link rel="icon" type="image/png" href="https://yunomihandroll.com/wp-content/uploads/2022/05/yunomi-natural-logo-opt-1.png">
   <link rel="stylesheet" href="/style.css">
   <style>
-    .menu-grid {
+    .menu-layout {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-      margin-top: 40px;
+      grid-template-columns: 1fr;
+      gap: 60px;
     }
-    .menu-card {
-      background-color: var(--bg-card);
-      border: 1px solid var(--border-color);
-      padding: 40px;
-      text-decoration: none;
-      color: var(--text-main);
+    @media (min-width: 992px) {
+      .menu-layout {
+        grid-template-columns: 7fr 5fr;
+      }
+    }
+    .menu-section {
+      margin-bottom: 48px;
+    }
+    .menu-section h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+    }
+    .menu-item {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
-      min-height: 240px;
-      transition: border-color 0.2s ease;
+      align-items: flex-start;
+      margin-bottom: 20px;
     }
-    .menu-card:hover {
-      border-color: var(--accent);
-    }
-    .menu-card h3 {
-      font-size: 20px;
+    .item-details h3 {
+      font-size: 16px;
       color: #FFFFFF;
-      margin-bottom: 12px;
+      font-weight: 600;
+      margin-bottom: 4px;
     }
-    .menu-card p {
+    .item-details p {
       font-size: 13px;
       color: var(--text-muted);
-      line-height: 1.6;
+      line-height: 1.4;
     }
-    .menu-link-label {
-      font-size: 11px;
+    .item-price {
+      font-size: 15px;
       font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 2px;
       color: var(--accent);
-      margin-top: 32px;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
+    }
+    .side-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .side-gallery img {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border-color);
+      object-fit: cover;
     }
   </style>
 </head>
@@ -59,7 +73,6 @@
       </a>
       <div class="nav-links">
         <a href="/menu" style="color: var(--accent);">Menus</a>
-        <a href="/gallery">Gallery</a>
         <a href="/press">Press</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
@@ -71,41 +84,100 @@
   <main>
     <div class="section-title">
       <p>The Culinary Offerings</p>
-      <h1>Interactive Menus</h1>
+      <h1>In-House Dining Menu</h1>
     </div>
 
-    <div class="menu-grid">
-      <a href="https://yunomihandroll.com/handroll-menu/" target="_blank" class="menu-card">
-        <div>
-          <h3>Indoor Bar Menu</h3>
-          <p>Signature raw single handrolls, curated premium sets, and cut rolls meticulously built behind the direct bar counter.</p>
-        </div>
-        <div class="menu-link-label">View Full Menu ↗</div>
-      </a>
+    <div class="menu-layout">
+      <div>
+        <div class="menu-section">
+          <h2>Curated Roll Sets</h2>
+          
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>3-Roll Set</h3>
+              <p>Daily Selection, Spicy Tuna, Cucumber Avocado Roll</p>
+            </div>
+            <div class="item-price">$19.00</div>
+          </div>
 
-      <a href="https://yunomihandroll.com/drink-menu/" target="_blank" class="menu-card">
-        <div>
-          <h3>Beer & Saké</h3>
-          <p>Imported craft draft options, complex cold sakes, and crisp matches balanced specifically for deep fish pairings.</p>
-        </div>
-        <div class="menu-link-label">View Drink Menu ↗</div>
-      </a>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>4-Roll Set</h3>
+              <p>Toro, Daily Selection, Yellowtail, Blue Crab Roll</p>
+            </div>
+            <div class="item-price">$24.00</div>
+          </div>
 
-      <a href="https://yunomihandroll.com/takeout-menu/" target="_blank" class="menu-card">
-        <div>
-          <h3>Takeout Menu</h3>
-          <p>Specially bundled variations engineered to safely sustain transit conditions while protecting custom rice textures.</p>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>5-Roll Set</h3>
+              <p>Toro, Salmon, Yellowtail, Blue Crab, Lobster Roll</p>
+            </div>
+            <div class="item-price">$31.00</div>
+          </div>
         </div>
-        <div class="menu-link-label">View Takeout Menu ↗</div>
-      </a>
 
-      <a href="https://yunomihandroll.com/patio-menu/" target="_blank" class="menu-card">
-        <div>
-          <h3>Patio Menu</h3>
-          <p>Casual outdoor open-air configurations. Exclusively offered at our Culver Steps destination framework.</p>
+        <div class="menu-section">
+          <h2>Individual Handrolls</h2>
+          
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Toro</h3>
+              <p>Premium fatty tuna minced with green scallions</p>
+            </div>
+            <div class="item-price">$7.50</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Blue Crab</h3>
+              <p>Sweet lump blue crab balanced with light dynamic mayo</p>
+            </div>
+            <div class="item-price">$6.75</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Yellowtail</h3>
+              <p>Fresh sliced amberjack with clean structural salt lines</p>
+            </div>
+            <div class="item-price">$6.50</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Spicy Tuna</h3>
+              <p>Yellowfin tuna combined with custom house chili blend</p>
+            </div>
+            <div class="item-price">$6.25</div>
+          </div>
         </div>
-        <div class="menu-link-label">View Patio Menu ↗</div>
-      </a>
+
+        <div class="menu-section">
+          <h2>Beverages & Saké</h2>
+          
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>House Junmai Saké</h3>
+              <p>Served crisp, clean, and perfectly chilled</p>
+            </div>
+            <div class="item-price">$11.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Sapporo Draft Premium</h3>
+              <p>Classic cold Japanese rice lager</p>
+            </div>
+            <div class="item-price">$7.00</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-gallery">
+        <img src="/images/handroll-1.jpg" alt="Pristine Handroll Serving Presentation">
+        <img src="/images/handroll-2.jpg" alt="Nori Texture Close Up Focus">
+      </div>
     </div>
   </main>
 
@@ -118,9 +190,6 @@
       <div class="footer-socials">
         <a href="https://www.instagram.com/yunomihandroll" target="_blank">Instagram</a>
         <a href="https://www.facebook.com/yunomihandroll" target="_blank">Facebook</a>
-      </div>
-      <div class="footer-contact-link">
-        <a href="/contact">Corporate Contact →</a>
       </div>
     </div>
   </footer>
