@@ -3,8 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accolades & Press | Yunomi Handroll</title>
+  <title>Press Accolades | Yunomi Handroll</title>
+  <link rel="icon" type="image/png" href="https://yunomihandroll.com/wp-content/uploads/2022/05/yunomi-natural-logo-opt-1.png">
   <link rel="stylesheet" href="/style.css">
+  <style>
+    .press-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-top: 60px;
+    }
+    @media (min-width: 768px) {
+      .press-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .press-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .press-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .press-content {
+      padding: 32px;
+    }
+    .press-source {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .press-quote {
+      font-size: 18px;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .press-link {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-main);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .press-link:hover {
+      color: var(--accent);
+    }
+  </style>
 </head>
 <body>
 
@@ -15,35 +71,38 @@
       </a>
       <div class="nav-links">
         <a href="/menu">Menus</a>
-        <a href="/gallery">Gallery</a>
         <a href="/press" style="color: var(--accent);">Press</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
+        <a href="https://yunomihandroll.com/apply-now/" target="_blank" class="cta-btn">Hiring</a>
       </div>
     </div>
   </header>
 
   <main>
     <div class="section-title">
-      <p>Critical Acclaim</p>
-      <h1>In The News</h1>
+      <p>In The News</p>
+      <h1>Editorial Recognition</h1>
     </div>
 
-    <div class="press-list">
-      <a href="https://guide.michelin.com/us/en/california/us-los-angeles/restaurant/yunomi-handroll" target="_blank" class="press-item">
-        <div class="press-source">The Michelin Guide</div>
-        <div class="press-quote">"A sleek counter space dropping pristine, fast-paced architectural handrolls onto the plate with uncompromised ingredient integrity."</div>
-      </a>
+    <div class="press-grid">
+      <div class="press-card">
+        <img src="/images/press-michelin.webp" alt="Michelin Guide Feature Plates">
+        <div class="press-content">
+          <div class="press-source">The Michelin Guide</div>
+          <div class="press-quote">"Yunomi brings an incredibly sharp, design-forward perspective to counter dining in LA, backed by flawless execution on the line."</div>
+          <a href="#" class="press-link">Read Feature Page →</a>
+        </div>
+      </div>
 
-      <a href="https://la.eater.com/2020/3/5/21166862/new-hand-roll-bar-arts-district-yunomi-arts-district-los-angeles" target="_blank" class="press-item">
-        <div class="press-source">EATER LA</div>
-        <div class="press-quote">"Yunomi commands incredible crowds to its counter spaces, redefining dynamic neighborhood sushi bars with elite precision."</div>
-      </a>
-
-      <a href="https://www.latimes.com/food/list/best-restaurants-redefining-modern-armenian-cuisine-in-los-angeles" target="_blank" class="press-item">
-        <div class="press-source">Los Angeles Times</div>
-        <div class="press-quote">"Elevating the core components of structural balance: perfectly calibrated warm rice wrapped tightly in expertly crisp nori sheets."</div>
-      </a>
+      <div class="press-card">
+        <img src="/images/press-eater.webp" alt="Eater LA Counter Spread Detail">
+        <div class="press-content">
+          <div class="press-source">Eater LA</div>
+          <div class="press-quote">"The crispness of the nori paired with their distinctively warm rice blend makes Yunomi an absolute destination bar."</div>
+          <a href="#" class="press-link">Read Feature Page →</a>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -53,8 +112,9 @@
         <p>YUNOMI.</p>
         <span>© 2026 Yunomi Handroll. All Rights Reserved.</span>
       </div>
-      <div class="footer-contact-link">
-        <a href="/contact">Corporate Contact →</a>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/yunomihandroll" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/yunomihandroll" target="_blank">Facebook</a>
       </div>
     </div>
   </footer>
