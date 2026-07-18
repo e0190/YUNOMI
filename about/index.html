@@ -3,31 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Philosophy | Yunomi Handroll</title>
+  <title>Our Story | Yunomi Handroll</title>
+  <link rel="icon" type="image/png" href="https://yunomihandroll.com/wp-content/uploads/2022/05/yunomi-natural-logo-opt-1.png">
   <link rel="stylesheet" href="/style.css">
   <style>
-    .about-content {
-      max-width: 700px;
-      margin: 40px auto 0 auto;
-      font-size: 16px;
-      line-height: 1.8;
-      color: #BBBBBB;
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-top: 40px;
     }
-    .about-content p {
+    @media (min-width: 768px) {
+      .about-layout {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .about-text h2 {
+      font-size: 24px;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .about-text p {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.8;
       margin-bottom: 24px;
     }
-    .award-badge {
-      border: 1px dashed var(--accent);
-      padding: 32px;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-    .award-badge h3 {
-      font-size: 14px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #FFFFFF;
-      margin-bottom: 8px;
+    .about-image img {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border-color);
     }
   </style>
 </head>
@@ -43,25 +50,26 @@
         <a href="/press">Press</a>
         <a href="/about" style="color: var(--accent);">About</a>
         <a href="/contact">Contact</a>
+        <a href="https://yunomihandroll.com/apply-now/" target="_blank" class="cta-btn">Hiring</a>
       </div>
     </div>
   </header>
 
   <main>
     <div class="section-title">
-      <p>The Architecture of Dining</p>
-      <h1>Our Story</h1>
+      <p>The Philosophy</p>
+      <h1>Architectural Dining</h1>
     </div>
 
-    <div class="about-content">
-      <div class="award-badge">
-        <h3>AIA Los Angeles Restaurant Design Award</h3>
-        <p style="font-size: 13px; color: var(--accent); margin: 0;">Official Winner — Conceptual Space & Physical Execution</p>
+    <div class="about-layout">
+      <div class="about-text">
+        <h2>Crafting the Perfect Bite</h2>
+        <p>Yunomi Handroll represents the union of minimal aesthetic style and meticulous Japanese technique. Founded in Los Angeles, our spaces are intentionally engineered around the central counter to cultivate an immediate connection between chef and diner.</p>
+        <p>Every handroll served is defined by structural balance: crisp, premium nori sourced overseas, precise warm seasoned rice, and perfectly chilled, responsibly caught fish. We believe that fine dining doesn't require a multi-hour commitment, just uncompromising focus.</p>
       </div>
-
-      <p>We believe the structural constraints of space dictate the performance of flavor. At Yunomi, our physical layout eliminates the distance between culinary execution and consumption. The handroll bar is configured as an continuous clean surface of raw concrete, timber accents, and strict lines.</p>
-
-      <p>This layout honors the exact properties of the handroll: seaweed loses its signature crisp snap within seconds of coming into contact with warm, seasoned rice. By structuring our rooms so that the chef serves directly across a hyper-minimalist threshold, we ensure absolute perfection with every transaction.</p>
+      <div class="about-image">
+        <img src="/images/about-chef.webp" alt="Chef Preparing Handroll At Counter">
+      </div>
     </div>
   </main>
 
@@ -71,8 +79,9 @@
         <p>YUNOMI.</p>
         <span>© 2026 Yunomi Handroll. All Rights Reserved.</span>
       </div>
-      <div class="footer-contact-link">
-        <a href="/contact">Corporate Contact →</a>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/yunomihandroll" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/yunomihandroll" target="_blank">Facebook</a>
       </div>
     </div>
   </footer>
