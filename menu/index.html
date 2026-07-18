@@ -29,11 +29,18 @@
       padding-bottom: 12px;
       margin-bottom: 24px;
     }
+    .menu-section-note {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: -16px;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
     .menu-item {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
     .item-details h3 {
       font-size: 16px;
@@ -45,11 +52,20 @@
       font-size: 13px;
       color: var(--text-muted);
       line-height: 1.4;
+      margin: 0;
+    }
+    .item-meta {
+      font-size: 12px;
+      color: var(--accent);
+      margin-top: 4px;
+      letter-spacing: 0.5px;
     }
     .item-price {
       font-size: 15px;
       font-weight: 700;
       color: var(--accent);
+      white-space: nowrap;
+      margin-left: 16px;
     }
     .side-gallery {
       display: flex;
@@ -61,6 +77,14 @@
       height: auto;
       border: 1px solid var(--border-color);
       object-fit: cover;
+    }
+    .disclaimer {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-top: 40px;
+      border-top: 1px dashed var(--border-color);
+      padding-top: 16px;
     }
   </style>
 </head>
@@ -83,66 +107,1126 @@
 
   <main>
     <div class="section-title">
-      <p>The Culinary Offerings</p>
-      <h1>In-House Dining Menu</h1>
+      <p>Your consideration for others is highly appreciated.</p>
+      <h1>Full Culinary Menu</h1>
+      <p style="margin-top: 8px; font-size: 14px; color: var(--text-muted);">Patio Hours: 12:00pm - 2:30pm | 5:00pm - 9:00pm</p>
     </div>
 
     <div class="menu-layout">
       <div>
+        <!-- STARTERS -->
         <div class="menu-section">
-          <h2>Curated Roll Sets</h2>
+          <h2>Starters</h2>
           <div class="menu-item">
             <div class="item-details">
-              <h3>3-Roll Set</h3>
-              <p>Daily Selection, Spicy Tuna, Cucumber Avocado Roll</p>
+              <h3>Edamame</h3>
+              <p>Soybeans and sea salt.</p>
             </div>
-            <div class="item-price">$19.00</div>
+            <div class="item-price">$6.00</div>
           </div>
           <div class="menu-item">
             <div class="item-details">
-              <h3>4-Roll Set</h3>
-              <p>Toro, Daily Selection, Yellowtail, Blue Crab Roll</p>
+              <h3>Green Beans</h3>
+              <p>Sautéed green beans with garlic soy.</p>
             </div>
-            <div class="item-price">$24.00</div>
+            <div class="item-price">$9.00</div>
           </div>
           <div class="menu-item">
             <div class="item-details">
-              <h3>5-Roll Set</h3>
-              <p>Toro, Salmon, Yellowtail, Blue Crab, Lobster Roll</p>
+              <h3>Shishito Peppers</h3>
+              <p>Shishito peppers and soy sauce.</p>
             </div>
-            <div class="item-price">$31.00</div>
+            <div class="item-price">$9.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Brussels Sprouts</h3>
+              <p>Fried crispy Brussel sprouts with sweet soy sauce, sesame seeds, Ichimi pepper.</p>
+            </div>
+            <div class="item-price">$9.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Sunomono</h3>
+              <p>Cucumber salad and tosa-zu.</p>
+            </div>
+            <div class="item-price">$7.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Seaweed Salad</h3>
+              <p>Sunomono, kaiso, chuka, ponzu, tosa-zu.</p>
+            </div>
+            <div class="item-price">$8.00</div>
           </div>
         </div>
 
+        <!-- APPETIZERS -->
         <div class="menu-section">
-          <h2>Individual Handrolls</h2>
+          <h2>Appetizers</h2>
           <div class="menu-item">
             <div class="item-details">
-              <h3>Toro</h3>
-              <p>Premium fatty tuna minced with green scallions</p>
+              <h3>Ceviche</h3>
+              <p>Mixed seafood Japanese style ceviche.</p>
+            </div>
+            <div class="item-price">$18.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Yellowtail Serrano Sashimi</h3>
+              <p>Yellowtail sashimi with serrano, tomato, and cilantro.</p>
+            </div>
+            <div class="item-price">$17.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Albacore Sashimi with Crunchy Onion</h3>
+              <p>Albacore sashimi with crunchy onion, scallions, momiji ponzu.</p>
+            </div>
+            <div class="item-price">$17.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Rock Shrimp Tempura</h3>
+              <p>Rock Shrimp Tempura tossed in house Spicy Mayo seasoned with Shichimi Togarashi and finished with Chives.</p>
+            </div>
+            <div class="item-price">$16.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Spicy Albacore on Crispy Rice w/ Truffle Soy Sauce</h3>
+              <p>Spicy Albacore on crispy rice drizzled with truffle soy sauce and topped with crunchy onion.</p>
+            </div>
+            <div class="item-price">$16.00</div>
+          </div>
+        </div>
+
+        <!-- TSUKAMI A LA CARTE SUSHI -->
+        <div class="menu-section">
+          <h2>Tsukami A La Carte Sushi</h2>
+          <div class="menu-section-note">2 Piece each</div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Bluefin Tuna</h3></div>
+            <div class="item-price">$10.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Bluefin Toro</h3></div>
+            <div class="item-price">$12.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Yellowtail</h3></div>
+            <div class="item-price">$8.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Albacore</h3></div>
+            <div class="item-price">$8.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Albacore Belly</h3></div>
+            <div class="item-price">$9.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Salmon</h3></div>
+            <div class="item-price">$8.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Salmon Belly</h3></div>
+            <div class="item-price">$9.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Halibut</h3></div>
+            <div class="item-price">$8.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Scallop</h3></div>
+            <div class="item-price">$8.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Sweet Shrimp</h3></div>
+            <div class="item-price">$10.00</div>
+          </div>
+        </div>
+
+        <!-- TSUKAMI SUSHI SETS -->
+        <div class="menu-section">
+          <h2>Tsukami Sushi Sets</h2>
+          <div class="menu-section-note">2 Piece each</div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Three Sushi Set</h3>
+              <p>BlueFin Tuna (Spain), Fluke (Korea), Jumbo Scallop (Hokkaido)</p>
+            </div>
+            <div class="item-price">$22.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Four Sushi Set</h3>
+              <p>BlueFin Tuna (Spain), Fluke (Korea), Salmon (Scotland), Jumbo Scallop (Hokkaido)</p>
+            </div>
+            <div class="item-price">$29.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Five Sushi Set</h3>
+              <p>BlueFin Tuna (Spain), Fluke (Korea), Salmon (Scotland), Albacore Tuna (Canada), Jumbo Scallop (Hokkaido)</p>
+            </div>
+            <div class="item-price">$36.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Six Sushi Set</h3>
+              <p>BlueFin Tuna (Spain), Fluke (Korea), Salmon (Scotland), Yellowtail (Japan), Albacore Tuna (Canada), Jumbo Scallop (Hokkaido)</p>
+            </div>
+            <div class="item-price">$43.00</div>
+          </div>
+        </div>
+
+        <!-- INDIVIDUAL HANDROLLS -->
+        <div class="menu-section">
+          <h2>Individual Handrolls</h2>
+          <div class="menu-section-note">Choose: Seaweed or Soy Paper | *Spicy or No Spicy available</div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Tuna *</h3></div>
+            <div class="item-price">$6.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Albacore *</h3></div>
+            <div class="item-price">$6.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Yellowtail *</h3></div>
+            <div class="item-price">$6.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Salmon *</h3></div>
+            <div class="item-price">$6.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Scallop *</h3></div>
+            <div class="item-price">$6.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Shrimp Tempura</h3></div>
+            <div class="item-price">$6.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Cucumber</h3></div>
+            <div class="item-price">$4.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Avocado</h3></div>
+            <div class="item-price">$4.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Cucumber / Avocado</h3></div>
+            <div class="item-price">$5.50</div>
+          </div>
+        </div>
+
+        <!-- SPECIALTY HANDROLLS -->
+        <div class="menu-section">
+          <h2>Specialty Handrolls</h2>
+          <div class="menu-section-note">Choose: Seaweed or Soy Paper</div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Lobster</h3>
+              <p>Lobster claw meat, mixed with our house made yuzu mayo</p>
+            </div>
+            <div class="item-price">$9.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Unagi & Shrimp Tempura</h3>
+              <p>Baked Eel, Shrimp Tempura, Eel Sauce</p>
+            </div>
+            <div class="item-price">$8.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Baked Crab</h3>
+              <p>Snow crab and California crab, baked with dynamite sauce</p>
             </div>
             <div class="item-price">$7.50</div>
           </div>
           <div class="menu-item">
             <div class="item-details">
               <h3>Blue Crab</h3>
-              <p>Sweet lump blue crab balanced with light dynamic mayo</p>
+              <p>Blue Crab mixed with mayo</p>
             </div>
-            <div class="item-price">$6.75</div>
+            <div class="item-price">$8.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Soft Shell Crab</h3>
+              <p>Whole Deep Fried Soft Shell Crab</p>
+            </div>
+            <div class="item-price">$8.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Spicy Tuna & Shrimp Tempura</h3>
+              <p>Spicy Tuna, Shrimp Tempura, house made spicy mayo</p>
+            </div>
+            <div class="item-price">$8.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Salmon Skin</h3>
+              <p>Crispy Salmon Skin w/ Cucumber, Gobo, Kaiware.</p>
+            </div>
+            <div class="item-price">$7.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Yunomi Special</h3>
+              <p>Spicy Albacore, Shrimp Tempura, Crunchy Onions, Truffle Soy Sauce</p>
+            </div>
+            <div class="item-price">$9.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Negi Toro</h3>
+              <p>Chopped Blue Fin (Spain) Fatty Tuna with Green Onions.</p>
+            </div>
+            <div class="item-price">$11.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Unagi</h3>
+              <p>Baked Eel, Cucumber, Eel Sauce</p>
+            </div>
+            <div class="item-price">$7.50</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Spicy Shrimp & Snowcrab</h3>
+              <p>Mixed with our house spicy mayo.</p>
+            </div>
+            <div class="item-price">$8.50</div>
+          </div>
+        </div>
+
+        <!-- HANDROLL SETS -->
+        <div class="menu-section">
+          <h2>Handroll Sets</h2>
+          <div class="menu-section-note">
+            Choose: Seaweed or Soy Paper | Spicy or No Spicy.<br>
+            Sets are fixed, substitutions only available for shellfish.<br>
+            *No Spicy option served with Japanese Nori<br>
+            **Spicy option served on Korean Seaweed
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Three Handroll Set</h3>
+              <p>Tuna, Salmon, Shrimp Tempura</p>
+            </div>
+            <div class="item-price">$17.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Four Handroll Set</h3>
+              <p>Tuna, Albacore, Salmon, Shrimp Tempura</p>
+            </div>
+            <div class="item-price">$22.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Five Handroll Set</h3>
+              <p>Tuna, Albacore, Salmon, Scallop, Shrimp Tempura</p>
+            </div>
+            <div class="item-price">$26.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Six Handroll Set</h3>
+              <p>Tuna, Albacore, Salmon, Yellowtail, Scallop, Shrimp Tempura</p>
+            </div>
+            <div class="item-price">$30.00</div>
+          </div>
+        </div>
+
+        <!-- ROLLS -->
+        <div class="menu-section">
+          <h2>Rolls</h2>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Tuna</h3>
+              <p>Spicy or No Spicy</p>
+            </div>
+            <div class="item-price">$11.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Albacore</h3>
+              <p>Spicy or No Spicy</p>
+            </div>
+            <div class="item-price">$11.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Salmon</h3>
+              <p>Spicy or No Spicy</p>
+            </div>
+            <div class="item-price">$11.00</div>
           </div>
           <div class="menu-item">
             <div class="item-details">
               <h3>Yellowtail</h3>
-              <p>Fresh sliced amberjack with clean structural salt lines</p>
+              <p>Spicy or No Spicy</p>
+            </div>
+            <div class="item-price">$11.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>California</h3>
+            </div>
+            <div class="item-price">$11.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Cucumber & Avocado</h3>
             </div>
             <div class="item-price">$6.50</div>
           </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Shrimp Tempura</h3>
+            </div>
+            <div class="item-price">$11.00</div>
+          </div>
         </div>
+
+        <!-- SPECIALTY ROLLS -->
+        <div class="menu-section">
+          <h2>Specialty Rolls</h2>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Crunch Roll</h3>
+              <p>Shrimp Tempura, Avocado, Cucumber topped with Tempura Flakes and drizzled with Eel Sauce</p>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Rainbow Roll</h3>
+              <p>California roll with tuna, yellowtail, salmon, white fish and Avocado on top</p>
+            </div>
+            <div class="item-price">$16.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Spicy Tuna & Shrimp Tempura Roll</h3>
+              <p>With Avocado & Cucumber</p>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Sunset Roll</h3>
+              <p>Cucumber with Eel and Avocado on top</p>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Yunomi Special Roll</h3>
+              <p>Shrimp Tempura, Cucumber topped with Spicy Albacore, Crispy Onion, drizzled with Truffle Soy Sauce</p>
+            </div>
+            <div class="item-price">$19.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Soft Shell Crab Roll</h3>
+              <p>Deep fried Soft Shell Crab, Avocado, Cucumber</p>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Baked Crab Roll</h3>
+              <p>Snow Crab Leg and Imitation Crab baked with Dynamite Sauce, served on soy paper</p>
+            </div>
+            <div class="item-price">$14.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Blue Crab Roll</h3>
+              <p>Hosomaki with steamed Blue Crab and light Mayo</p>
+            </div>
+            <div class="item-price">$13.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Spicy Shrimp & Snow Crab Roll</h3>
+              <p>Mixed with Spicy Mayo served Rice outside in a roll, served on soy paper</p>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Spicy Tuna Rock Shrimp Roll</h3>
+              <p>Spicy Tuna cutroll with Rock Shrimp Tempura tossed in house Spicy Mayo, served on soy paper</p>
+            </div>
+            <div class="item-price">$16.00</div>
+          </div>
+        </div>
+
+        <!-- CARRY OUT INDIVIDUAL BOXES -->
+        <div class="menu-section">
+          <h2>Carry Out Individual Boxes</h2>
+          <div class="menu-section-note">Cutroll Boxes are pictured in No Spicy option. Spicy option comes with Rice on the outside.</div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Three Cutroll Box</h3>
+              <p>12 piece Cutroll, Tuna, Salmon, Shrimp Tempura, Seaweed salad, Sunomono, Edamame.</p>
+            </div>
+            <div class="item-price">$18.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Four Cutroll Box</h3>
+              <p>16 piece Cutroll, Tuna, Albacore, Salmon, Shrimp Tempura, Seaweed Salad, Sunomono, Edamame.</p>
+            </div>
+            <div class="item-price">$21.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Five Cutroll Box</h3>
+              <p>20 piece Cutroll, Tuna, Albacore, Salmon, Yellowtail, Shrimp Tempura, Seaweed Salad, Sunomono, Edamame.</p>
+            </div>
+            <div class="item-price">$24.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Three Cutroll & Sashimi Box</h3>
+              <p>12 piece Cutroll, Tuna, Salmon, Shrimp Tempura, 2 piece Yellowtail Serrano Sashimi, 2 piece Albacore Onion Sashimi, Edamame.</p>
+            </div>
+            <div class="item-price">$23.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Four Cutroll & Sashimi Box</h3>
+              <p>16 piece Cutroll, Tuna, Albacore, Salmon, Shrimp Tempura, 2 piece Yellowtail Serrano Sashimi, 2 piece Albacore Onion Sashimi, Edamame.</p>
+            </div>
+            <div class="item-price">$26.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Five Cutroll & Sashimi Box</h3>
+              <p>20 piece Cutroll, Tuna, Albacore, Salmon, Yellowtail, Shrimp Tempura, 2 piece Yellowtail Serrano Sashimi, 2 piece Albacore Onion Sashimi, Edamame.</p>
+            </div>
+            <div class="item-price">$29.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Yurollmi Handroll Kit</h3>
+              <p>Roll yourself 5 piece Handroll Set, Tuna, Yellowtail, Salmon, Shrimp Tempura, Cucumber, 5 piece individually wrapped Nori (Seaweed), Edamame.</p>
+            </div>
+            <div class="item-price">$36.00</div>
+          </div>
+        </div>
+
+        <!-- HOT TEA -->
+        <div class="menu-section">
+          <h2>Hot Tea</h2>
+          <div class="menu-section-note">Teas are brewed in Tetsubin. Priced per Kettle. 2nd brew is free.</div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Gyokuro</h3>
+              <p>A taste of seaweed with mellow mineral finish, sweet and full bodied</p>
+            </div>
+            <div class="item-price">$6.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Hojicha</h3>
+              <p>A roasted green tea with robust flavor</p>
+            </div>
+            <div class="item-price">$6.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Genmaicha</h3>
+              <p>A bold, rich green tea with roasted rice</p>
+            </div>
+            <div class="item-price">$6.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Sencha</h3>
+              <p>A fresh and mildly sweet, classic green tea</p>
+            </div>
+            <div class="item-price">$6.00</div>
+          </div>
+        </div>
+
+        <!-- COLD DRINKS -->
+        <div class="menu-section">
+          <h2>Cold Drinks</h2>
+          <div class="menu-item">
+            <div class="item-details"><h3>Kimino Yuzu Sparkling Juice</h3></div>
+            <div class="item-price">$5.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Iced Green Tea</h3></div>
+            <div class="item-price">$4.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Mini Diet Coke</h3></div>
+            <div class="item-price">$4.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Mini Sprite</h3></div>
+            <div class="item-price">$4.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Mini Coke</h3></div>
+            <div class="item-price">$4.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Mini San Pellegrino</h3></div>
+            <div class="item-price">$4.00</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-details"><h3>Panna Spring Water</h3></div>
+            <div class="item-price">$4.00</div>
+          </div>
+        </div>
+
+        <!-- BEER Selection -->
+        <div class="menu-section">
+          <h2>Beer Selection</h2>
+          
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Mori <span style="font-size:11px; color:var(--text-muted); font-weight:normal;">(Only Available at DTLA & Toluca)</span></h3>
+              <p>Fruity • Light • Semi-Dry | Japanese Rice Lager</p>
+              <div class="item-meta">Far Yeast Brewery | 330ML | ABV 6.9%</div>
+            </div>
+            <div class="item-price">$14.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Hitachino Sunbathing Owl</h3>
+              <p>Citrusy • Light | Golden Ale</p>
+              <div class="item-meta">Hitachino Brewing Lab | 330ML | ABV 5%</div>
+            </div>
+            <div class="item-price">$16.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Lucky Cat</h3>
+              <p>Citrusy • Yuzu Forward • Crispy • Snappy • Spiced | Witbier</p>
+              <div class="item-meta">Kizakura Sake Brewing Co. | 330ML | ABV 5%</div>
+            </div>
+            <div class="item-price">$10.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Orion Shokunin</h3>
+              <p>Wheaty • Fruity • Hints of Banana | Japanese Wheat Ale</p>
+              <div class="item-meta">Okinawa, Japan | 350ML | ABV 5%</div>
+            </div>
+            <div class="item-price">$8.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Orion Rice Lager</h3>
+              <p>Light • Crispy | Japanese Rice Lager</p>
+              <div class="item-meta">Okinawa, Japan | 330ML | ABV 5%</div>
+            </div>
+            <div class="item-price">$12.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Yuzu / Ginger Non ALC</h3>
+              <p>Sweet • Ginger • Citrusy • Malty | Low Alcohol Beer</p>
+              <div class="item-meta">Hitachino Brewing Lab | 330ML | ABV &lt;0.2%</div>
+            </div>
+            <div class="item-price">$13.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Kagua Rouge</h3>
+              <p>Malty • Toasty • Citrusy • Mild Spicy | Belgium Dark Strong Ale</p>
+              <div class="item-meta">Far East Brewery | 330ML | ABV 8%</div>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Anbai Ale</h3>
+              <p>Salty • Sour • Fruity | Gose</p>
+              <div class="item-meta">Hitachino Brewing Lab | 330ML | ABV 7.5%</div>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Kagua Blanc</h3>
+              <p>Citrusy • Wheaty • Aromatic | Belgium Pale Strong Ale</p>
+              <div class="item-meta">Far East Brewing | 330ML | ABV 7.6%</div>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Twilight Ale</h3>
+              <p>Hoppy • Earthy • Toasty | English Pale Ale</p>
+              <div class="item-meta">Kawaba Village • Gunma | 330ML | ABV 5.2%</div>
+            </div>
+            <div class="item-price">$12.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Pearl Rice Pilsner</h3>
+              <p>Light Hoppy • Malty • Roasted • Structured | Japanese Rice Lager</p>
+              <div class="item-meta">Kawaba Village • Gunma | 330ML | ABV 5.2%</div>
+            </div>
+            <div class="item-price">$12.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Omachi Sake Rice Lager</h3>
+              <p>Light • Bold | Japanese Rice Lager</p>
+              <div class="item-meta">Miyashita Sake Brewery | 330ML | ABV 5%</div>
+            </div>
+            <div class="item-price">$14.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Yuzu Citrus Doppo</h3>
+              <p>Fruity • Refreshing • Tart | Fruit Beer</p>
+              <div class="item-meta">Miyashita Sake Brewery | 330ML | ABV 5%</div>
+            </div>
+            <div class="item-price">$14.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Matcha IPA</h3>
+              <p>Earthy • Soft Bitterness • Light Malty • Refined | Imperial IPA</p>
+              <div class="item-meta">Kizakura Sake Brewing Co. | 330ML | ABV 8.5%</div>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Kyoto IPA</h3>
+              <p>Malty • Citrusy • Passion Fruit • Structured | India Pale Ale</p>
+              <div class="item-meta">Kizakura Sake Brewing Co. | 330ML | ABV 6.5%</div>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Red Rice Ale</h3>
+              <p>Earthy • Rich Flavor • Creamy • Medium • Toasty | Belgium Pale Strong Ale</p>
+              <div class="item-meta">Hitachino Brewing Lab | 330ML | ABV 7%</div>
+            </div>
+            <div class="item-price">$16.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Dai Dai IPA</h3>
+              <p>Orangey • Smooth • Light Aromatic • Structured | American IPA</p>
+              <div class="item-meta">Hitachino Brewing Lab | 330ML | ABV 6%</div>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Nipponia Pilsner</h3>
+              <p>Malty • Smooth • Silky • Spiced • Zesty | Imperial Pilsner</p>
+              <div class="item-meta">Hitachino Brewing Lab | 330ML | ABV 6.5%</div>
+            </div>
+            <div class="item-price">$16.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Yuzu Lager</h3>
+              <p>Citrusy • Light • Crispy • Refreshing | American Lager</p>
+              <div class="item-meta">Hitachino Brewing Lab | 330ML | ABV 5.6%</div>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>White Ale</h3>
+              <p>Orangey • Wheaty • Spiced • Crispy • Dark Bread | Witbier</p>
+              <div class="item-meta">Hitachino Brewing Lab | 330ML | ABV 5.5%</div>
+            </div>
+            <div class="item-price">$16.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Yoho Sorry Nippon Citrus</h3>
+              <p>Citrusy • Light • Refreshing • Crisp • Strong Yuzu | Gose</p>
+              <div class="item-meta">Yoho Brewing Co. | 330ML | ABV 6.5%</div>
+            </div>
+            <div class="item-price">$13.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Yoho Umami IPA</h3>
+              <p>Mild Hoppy • Floral • Creamy • Light Citrus • Light Earthy | American IPA</p>
+              <div class="item-meta">Yoho Brewing Co. | 350ML | ABV 6.5%</div>
+            </div>
+            <div class="item-price">$13.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Koshihikari Echigo</h3>
+              <p>Crisp • Light • Smooth • Refreshing | Japanese Rice Lager</p>
+              <div class="item-meta">Echigo Beer Co. | 350ML | ABV 5%</div>
+            </div>
+            <div class="item-price">$12.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Asahi “Super Dry”</h3>
+              <p>Light • Clean • Moderate Bitterness • Dry | Japanese Rice Lager</p>
+              <div class="item-meta">Osaka Beer Company | 330ML | ABV 5.2%</div>
+            </div>
+            <div class="item-price">$8.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Sapporo Premium</h3>
+              <p>Clean • Aromatic • Crispy | American Lager</p>
+              <div class="item-meta">Sapporo Brewery | 355ML | ABV 4.9%</div>
+            </div>
+            <div class="item-price">$8.00</div>
+          </div>
+        </div>
+
+        <!-- INDIVIDUAL SAKE & HIGHBALLS -->
+        <div class="menu-section">
+          <h2>Individual Saké & Highballs</h2>
+          
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Takara Chu-Hi White Peach</h3>
+              <p>Sweet • Bubbly • Peachy | Sho Chu Highball</p>
+              <div class="item-meta">12oz | 4.5% ABV</div>
+            </div>
+            <div class="item-price">$8.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Takara Chu-Hi Fuji Apple</h3>
+              <p>Crisp • Sweet • Fruity | Sho Chu Highball</p>
+              <div class="item-meta">12oz | 4.5% ABV</div>
+            </div>
+            <div class="item-price">$8.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Takara Chu-Hi Lemon</h3>
+              <p>Citrusy • Crispy • Bubbly | Sho Chu Highball</p>
+              <div class="item-meta">12oz | 5.5% ABV</div>
+            </div>
+            <div class="item-price">$8.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Nanbu Bijin (Red)</h3>
+              <p>Aromatic • Clean • Dry • Creamy | Tokubetsu Junmai</p>
+              <div class="item-meta">180ML | ABV 15%</div>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Dewatsuru</h3>
+              <p>Delicate • Dry • Creamy • Clean Finish • Semi-Sweet | Junmai Nigori**</p>
+              <div class="item-meta">180ML | ABV 17%</div>
+            </div>
+            <div class="item-price">$12.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Nanbu Bijin (Blue)</h3>
+              <p>Gentle • Medium Dry • Clean • Sharp Finish | Ginjo</p>
+              <div class="item-meta">180ML | ABV 15%</div>
+            </div>
+            <div class="item-price">$15.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Kitaya</h3>
+              <p>Medium Dry • Clean • Rich • Fruity | Shimane Junmai**</p>
+              <div class="item-meta">180ML | ABV 16%</div>
+            </div>
+            <div class="item-price">$14.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Eyeball Daddy</h3>
+              <p>Smooth • Semi Sweet • Silky | Junmai Ginjo</p>
+              <div class="item-meta">180ML | ABV 16%</div>
+            </div>
+            <div class="item-price">$17.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Black Bull</h3>
+              <p>Light • Dry • Light Citrus • Clean | Junmai Ginjo</p>
+              <div class="item-meta">180ML | ABV 16.5%</div>
+            </div>
+            <div class="item-price">$18.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Chika</h3>
+              <p>Fruity • Nutty • Light Aromatic • Semi Sweet | Junmai</p>
+              <div class="item-meta">Kobe, Hyogo | 200ML | ABV 13.5%</div>
+            </div>
+            <div class="item-price">$11.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Demon Boy</h3>
+              <p>Rich Umami • Dry • Fruity | Junmai Ginjo</p>
+              <div class="item-meta">180ML | ABV 16%</div>
+            </div>
+            <div class="item-price">$18.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Funaguchi</h3>
+              <p>Rich • Sweet • Velvety • Deep Fruity Flavor | Funaguchi Nama Genshu</p>
+              <div class="item-meta">180ML | ABV 19%</div>
+            </div>
+            <div class="item-price">$12.00</div>
+          </div>
+        </div>
+
+        <!-- BOTTLED SAKE -->
+        <div class="menu-section">
+          <h2>Bottled Saké</h2>
+          
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Kurosawa Nigori</h3>
+              <p>Sweet • Creamy • Medium Bodied • Fruity | Junmai</p>
+              <div class="item-meta">Prefecture: Tochigi | 330ML | ABV 8%</div>
+            </div>
+            <div class="item-price">$22.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Drunken Whale</h3>
+              <p>Light • Dry • Fruity • Clean | Tokubetsu Junmai</p>
+              <div class="item-meta">Prefecture: Kouchi | 330ML | ABV 15%</div>
+            </div>
+            <div class="item-price">$22.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Perfect Snow</h3>
+              <p>Aromatic • Creamy • Luscious • Crisp • Ricey | Junmai Nigori**</p>
+              <div class="item-meta">Prefecture: Niigata | 300ML | ABV 21%</div>
+            </div>
+            <div class="item-price">$18.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Dassai 45</h3>
+              <p>Light • Dry • Sweet • Aromatic | Junmai Daiginjo**</p>
+              <div class="item-meta">Prefecture: Yamaguchi | 300ML | ABV 16%</div>
+            </div>
+            <div class="item-price">$25.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Kurosawa</h3>
+              <p>Silky • Smooth • Full-Bodied • Clean Finish • Earthy | Kimoto Junmai**</p>
+              <div class="item-meta">Prefecture: Gunma | 300ML | ABV 15.5%</div>
+            </div>
+            <div class="item-price">$27.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Suijin</h3>
+              <p>Soft • Super Dry • Fruity • Light | Junmai**</p>
+              <div class="item-meta">Prefecture: Asabiraki | 300ML | ABV 17%</div>
+            </div>
+            <div class="item-price">$23.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Sayuri</h3>
+              <p>Light • Aromatic • Fruity • Sweet • Clean | Junmai Nigori**</p>
+              <div class="item-meta">Prefecture: Hyogo | 300ML | ABV 12.5%</div>
+            </div>
+            <div class="item-price">$20.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Kikusui</h3>
+              <p>Clean • Smooth • Crisp • Medium Body • Dry | Junmai Ginjo</p>
+              <div class="item-meta">Prefecture: Niigata | 300ML | ABV 15%</div>
+            </div>
+            <div class="item-price">$20.00</div>
+          </div>
+        </div>
+
+        <!-- PREMIUM SAKE -->
+        <div class="menu-section">
+          <h2>Premium Saké</h2>
+          
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Dassai Blue 35</h3>
+              <p>Rich Taste • Dense Aroma • Long Finish | Junmai Daiginjo**</p>
+              <div class="item-meta">Brewery: Dassai USA, Hyde Park, NY | 375ML | ABV 14%</div>
+            </div>
+            <div class="item-price">$40.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Dassai Blue 50 DRY</h3>
+              <p>Buttery • Fruity • Clean • Fruity • Smooth Finish | Junmai Daiginjo**</p>
+              <div class="item-meta">Brewery: Dassai USA, Hyde Park, NY | 375ML | ABV 14%</div>
+            </div>
+            <div class="item-price">$30.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Dassai Blue 50</h3>
+              <p>Refreshing Aroma • Elegant Umami • Light Finish | Junmai Daiginjo**</p>
+              <div class="item-meta">Brewery: Dassai USA, Hyde Park, NY | 375ML | ABV 14%</div>
+            </div>
+            <div class="item-price">$28.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Kubota Senjyu</h3>
+              <p>Light Dry • Smooth • Silky • Melony • Citrusy | Junmai Ginjo</p>
+              <div class="item-meta">Prefecture: Hokuriku | 300ML | ABV 15%</div>
+            </div>
+            <div class="item-price">$21.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Dassai 45 Nigori</h3>
+              <p>Bright • Balanced • Juicy • Semi Sweet • Silky | Junmai Daiginjo**</p>
+              <div class="item-meta">Prefecture: Yamaguchi | 300ML | ABV 16%</div>
+            </div>
+            <div class="item-price">$26.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Mizubasho</h3>
+              <p>Light • Dry • Semi Sweet • Silky | Ginjo</p>
+              <div class="item-meta">Prefecture: Gunma | 300ML | ABV 16%</div>
+            </div>
+            <div class="item-price">$28.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Demon Slayer</h3>
+              <p>Rich • Super Dry • Earthy • Spiced | Honjozo**</p>
+              <div class="item-meta">Prefecture: Honjozo | 300ML | ABV 16.5%</div>
+            </div>
+            <div class="item-price">$22.00</div>
+          </div>
+        </div>
+
+        <!-- WINE -->
+        <div class="menu-section">
+          <h2>Wine Selection</h2>
+          <div class="menu-section-note">Limit one bottle per visit. Bottles sold only to party of 2+</div>
+          
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Whitehaven 2022</h3>
+              <p>Structured • Floral • Tangy • Fruity | Sauvignon Blanc**</p>
+              <div class="item-meta">Vineyard: Marlborough, New Zealand</div>
+            </div>
+            <div class="item-price">$13.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Raeburn Chardonnay 2020</h3>
+              <p>Creamy • Fruity • Juicy • Toasty • Balanced | Chardonnay</p>
+              <div class="item-meta">Vineyard: Sonoma County, California</div>
+            </div>
+            <div class="item-price">$13.00</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-details">
+              <h3>Jermann 2021</h3>
+              <p>Fruity • Citrusy • Smooth • Balanced | Pinot Grigio**</p>
+              <div class="item-meta">Vineyard: Friuli-Venezia Giulia, Italy</div>
+            </div>
+            <div class="item-price">$13.00</div>
+          </div>
+        </div>
+
+        <p class="disclaimer">Consuming raw or undercooked seafood or shellfish may increase your risk of foodborne illness, especially if you have certain medical conditions.</p>
       </div>
 
+      <!-- VISUAL GALLERY -->
       <div class="side-gallery">
-        <img src="/images/handroll-1.webp" alt="Pristine Handroll Serving Presentation">
-        <img src="/images/handroll-2.webp" alt="Nori Texture Close Up Focus">
+        <img src="https://yunomihandroll.com/wp-content/uploads/2023/01/greenbeans-alt.jpg" alt="Sautéed Garlic Soy Green Beans">
+        <img src="https://yunomihandroll.com/wp-content/uploads/2023/01/shishito-alt.jpg" alt="Blistered Shishito Peppers">
+        <img src="https://yunomihandroll.com/wp-content/uploads/2023/01/brussels-alt.jpg" alt="Crispy Fried Brussels Sprouts">
+        <img src="https://yunomihandroll.com/wp-content/uploads/2023/03/ceviche-CLA01125.jpg" alt="Japanese Style Ceviche Presentation">
+        <img src="https://yunomihandroll.com/wp-content/uploads/2023/03/crispy-rice-CLA01131.jpg" alt="Spicy Albacore on Crispy Rice with Truffle Soy">
+        <img src="https://yunomihandroll.com/wp-content/uploads/2023/03/takeout-box-web-06.jpg" alt="Yunomi Premium Takeout Box Setup">
+        <img src="https://yunomihandroll.com/wp-content/uploads/2023/03/takeout-box-01-web.jpg" alt="Curated Cutroll Box Detail Presentation">
+        <img src="https://yunomihandroll.com/wp-content/uploads/2023/01/vertical-handroll-03-alt.jpg" alt="Premium Nori Handroll Details">
       </div>
     </div>
   </main>
