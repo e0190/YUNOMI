@@ -16,7 +16,7 @@
       text-align: center;
       border-bottom: 1px solid var(--border-color);
       position: relative;
-      background-image: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.75)), url('/images/hero-bg.jpg');
+      background-image: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.75)), url('/images/hero-bg.webp');
       background-size: cover;
       background-position: center;
     }
@@ -103,6 +103,23 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      position: relative;
+    }
+    .location-card.coming-soon {
+      opacity: 0.8;
+      border: 1px dashed rgba(197, 168, 128, 0.4);
+    }
+    .coming-soon-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: #111111;
+      font-size: 9px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 8px;
     }
     .location-card h3 {
       font-size: 20px;
@@ -145,6 +162,12 @@
     .action-takeout:hover {
       border-color: var(--accent);
     }
+    .action-disabled {
+      background-color: rgba(255, 255, 255, 0.03);
+      border: 1px dashed var(--border-color);
+      color: var(--text-muted);
+      cursor: default;
+    }
   </style>
 </head>
 <body>
@@ -184,7 +207,7 @@
   </section>
 
   <div class="inline-photo-block" style="max-width: 1200px; margin: 80px auto 0 auto; padding: 0 40px;">
-    <img src="/images/interior-dtla.jpg" alt="Yunomi Counter Dynamic Framing">
+    <img src="/images/interior-dtla.webp" alt="Yunomi Counter Dynamic Framing">
   </div>
 
   <main id="locations">
@@ -233,6 +256,22 @@
         <div class="location-actions">
           <a href="https://www.yelp.com/waitlist/yunomi-handroll-san-fernando-valley/" target="_blank" class="action-waitlist">Yelp Live Waitlist</a>
           <a href="https://order.toasttab.com/online/yunomi-handroll-bar-toluca-lake" target="_blank" class="action-takeout">Toast Takeout</a>
+        </div>
+      </div>
+
+      <!-- NEW ATWATER VILLAGE SPOT -->
+      <div class="location-card coming-soon">
+        <div class="coming-soon-badge">Coming Soon</div>
+        <div>
+          <h3>Atwater Village</h3>
+          <div class="location-meta">
+            3200 Glendale Blvd<br>Los Angeles, CA 90039<br><br>
+            Opening late 2026. Stay tuned for architectural updates.
+          </div>
+        </div>
+        <div class="location-actions">
+          <a href="#" class="action-disabled">Waitlist Unavailable</a>
+          <a href="#" class="action-disabled">Online Ordering Offline</a>
         </div>
       </div>
     </div>
